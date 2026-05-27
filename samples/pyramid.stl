@@ -1,0 +1,44 @@
+solid Pyramid
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 20 0 0
+      vertex 20 20 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 20 20 0
+      vertex 0 20 0
+    endloop
+  endfacet
+  facet normal 0 -0.8944 0.4472
+    outer loop
+      vertex 0 0 0
+      vertex 20 0 0
+      vertex 10 10 20
+    endloop
+  endfacet
+  facet normal 0.8944 0 0.4472
+    outer loop
+      vertex 20 0 0
+      vertex 20 20 0
+      vertex 10 10 20
+    endloop
+  endfacet
+  facet normal 0 0.8944 0.4472
+    outer loop
+      vertex 20 20 0
+      vertex 0 20 0
+      vertex 10 10 20
+    endloop
+  endfacet
+  facet normal -0.8944 0 0.4472
+    outer loop
+      vertex 0 20 0
+      vertex 0 0 0
+      vertex 10 10 20
+    endloop
+  endfacet
+endsolid Pyramid
