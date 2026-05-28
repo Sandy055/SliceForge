@@ -51,13 +51,6 @@
 //
 //   t ranges from 0 (at A) to 1 (at B). If t is between 0 and 1,
 //   the intersection is on the edge segment.
-//
-// WHY THIS MATTERS FOR THE INTERVIEW:
-// This is real computational geometry — the same math used in professional
-// slicers like Cura and PrusaSlicer. Be ready to explain:
-// - How plane-triangle intersection works
-// - Why you get exactly one line segment per intersected triangle
-// - How line segments are chained into closed contours
 
 #include "Mesh.h"
 #include <vector>

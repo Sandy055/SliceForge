@@ -32,11 +32,6 @@
 //
 // Binary is ~10x smaller than ASCII for the same model. Our parser handles
 // both automatically by checking the file header.
-//
-// WHY THIS MATTERS FOR THE INTERVIEW:
-// Parsing is a fundamental software engineering skill. Steven might ask
-// "how do you handle malformed input?" — we validate at every step and
-// throw descriptive exceptions rather than crashing silently.
 
 #include "Mesh.h"
 #include <fstream>

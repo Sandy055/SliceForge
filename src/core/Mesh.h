@@ -120,12 +120,7 @@ struct Triangle {
     // Compute normal using the cross product of two edges.
     // Edge1 = v1 - v0, Edge2 = v2 - v0.
     // Their cross product is perpendicular to the triangle's surface.
-    //
-    // WHY THIS MATTERS FOR THE INTERVIEW:
-    // Steven might ask "how do you determine which direction a surface faces?"
-    // Answer: cross product of two edges gives the surface normal. The winding
-    // order (clockwise vs counterclockwise) of the vertices determines which
-    // way the normal points — this is a convention in 3D graphics.
+
     void computeNormal() {
         Vertex edge1 = v1 - v0;
         Vertex edge2 = v2 - v0;

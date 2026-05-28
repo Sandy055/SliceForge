@@ -25,11 +25,6 @@
 //
 // OBJ also supports quads (f 1 2 3 4) and n-gons, but we triangulate
 // them because our slicer only works with triangles.
-//
-// WHY THIS MATTERS FOR THE INTERVIEW:
-// This demonstrates understanding of different data representations
-// for the same concept, and the trade-offs between them (STL is simpler
-// to parse but wastes memory; OBJ is compact but requires index lookups).
 
 #include "Mesh.h"
 #include <fstream>

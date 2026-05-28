@@ -4,9 +4,7 @@
 // =============================================================================
 // SlicingPipeline — Multithreaded Parallel Slicing
 // =============================================================================
-//
-// This is where we get the ~60% speedup mentioned on the resume.
-//
+
 // KEY INSIGHT: Each layer is independent. The contour at z=5.0mm doesn't
 // depend on the contour at z=4.8mm. This makes slicing "embarrassingly
 // parallel" — we can compute all layers simultaneously without any
@@ -33,14 +31,6 @@
 //                                 ...
 //
 //   Wait for all complete ←─────  All workers: done
-//
-// WHY THIS MATTERS FOR THE INTERVIEW:
-// Both roles list "multithreaded" as a key skill. Be ready to explain:
-// - Why slicing is parallelizable (layers are independent)
-// - Thread pool vs creating threads per task (overhead)
-// - How mutex protects shared results vector
-// - What a condition variable does (signals waiting threads)
-// - Potential issues: false sharing, lock contention
 
 #include "Slicer.h"
 #include "Mesh.h"
