@@ -14,6 +14,9 @@ SliceForge/
 │   │   ├── Slicer.h            — Plane-mesh intersection & contour extraction
 │   │   ├── SlicingPipeline.h   — Thread pool + parallel slicing orchestrator
 │   │   └── ProfileSerializer.h — JSON build profile output
+│   ├── ui/
+│   │   ├── main.cpp            — Qt bridge class exposing engine to QML
+│   │   └── Main.qml            — Desktop UI with layer slider & contour preview
 │   └── main_cli.cpp            — CLI entry point
 ├── tests/
 │   └── test_all.cpp            — 24 unit tests
